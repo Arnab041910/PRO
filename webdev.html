@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game on.in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="webdev.css">
+</head>
+<body>
+  <img class="tiger" src="https://wallpaperaccess.com/full/7445.jpg" alt="">
+
+  <!---Navigation bar-->
+
+  <nav class="navbar navbar-expand-lg " id="cow">
+    <div class="container-fluid horse">
+      <a class="navbar-brand joke" href="#">
+        <i class="fa-solid fa-gamepad fa-spin" style="color: #d7e60a; font-size: 40px;"></i>
+        <h4 id="soham"><b><i class="fa-solid fa-g fa-beat-fade"></i><i class="fa-solid fa-a fa-beat-fade"></i><i
+              class="fa-solid fa-m fa-beat-fade"></i><i class="fa-solid fa-e fa-beat-fade"></i>&nbsp;<i
+              class="fa-solid fa-o fa-beat-fade"></i><i class="fa-solid fa-n fa-beat-fade"></i></b></h4></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 cobra">
+          <li class="nav-item">
+            <a class="nav-link active" id="legend" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: white;">Games</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pricing
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;">Advantages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="priya" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" id="jewel" type="submit">Search</button>
+
+
+
+          <!-- Button trigger modal -->
+
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            login
+          </button>
+
+          <!-- Modal -->
+
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: black; text-align: center;">LOGIN
+                    PAGE</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body best" style="color: black;">
+                  <label for="op">EMAIL :</label><br><br>
+                  <input type="email" placeholder="Enter your email" style="width:480px;height: 40px;" id="op">
+                </div>
+                <div class="modal-body game best">
+                  <label for="op">PASSWORD :</label><br><br>
+                  <input type="password" placeholder="Enter your password" style="width:480px;height: 40px;" id="op">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+  </nav>
+  <div class="dada">
+    <ul>
+      <li>
+        <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop"><i
+            class="fa-sharp fa-solid fa-share-nodes fa-beat-fade"></i>
+          &nbsp; Share
+        </button>
+      </li>
+      <br>
+      <li>
+        <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop"><i
+            class="fa-regular fa-thumbs-up fa-beat-fade"></i>
+          &nbsp; Like
+        </button>
+      </li>
+      <br>
+      <li>
+        <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop"><i
+            class="fa-solid fa-star fa-spin"></i>
+          &nbsp; Rate Us
+        </button>
+      </li>
+      <br>
+      <li>
+        <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop" id="mom"
+          style="margin-right: -200px;"><i class="fa-solid fa-comment fa-beat-fade"></i>
+          &nbsp; Leave a comment
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="top-left joy">
+
+    <div class="waviy">
+      <span style="--i:1">W</span>
+      <span style="--i:2">E</span>
+      <span style="--i:3">L</span>
+      <span style="--i:4">C</span>
+      <span style="--i:5">O</span>
+      <span style="--i:6">M</span>
+      <span style="--i:7">E</span>
+      <span style="--i:8">&nbsp;&nbsp;T</span>
+      <span style="--i:9">0</span>
+      <br>
+      <span style="--i:10">&nbsp;&nbsp;G</span>
+      <span style="--i:1"> A</span>
+      <span style="--i:2">M</span>
+      <span style="--i:3">E</span>
+      <span style="--i:4">&nbsp;&nbsp;O</span>
+      <span style="--i:5">N</span>
+      <br>
+      <span style="--i:6">&nbsp;&nbsp;W</span>
+      <span style="--i:7">E</span>
+      <span style="--i:8">B</span>
+      <span style="--i:9">S</span>
+      <span style="--i:10">I</span>
+      <span style="--i:10">T</span>
+      <span style="--i:10">E</span>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="bumba">
+      <pre>Stimulate experiance that can be similar to or completely different from the real world 
+  and discover the ultimate guide to dominate in realistic BATTLE-ROYAL GAMES</pre>
+    </div>
+    <div class="ishan">
+      <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop" id="awe"><i
+          class="fa-solid fa-play fa-spin fa-spin-reverse"></i>
+        &nbsp; GET STARTED
+      </button>
+      <button type="button" class="btn btn-primary wolf" data-bs-target="#staticBackdrop" id="awe"><i
+          class="fa-brands fa-google-play fa-beat-fade" style="color:white;"></i>
+        &nbsp;DOWNLOAD ON THE APP STORE
+      </button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <br>
+
+  <br><br>
+
+  <!--Slides containing text-->
+
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide virat" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <!--A heading paragraph-->
+
+      <form class="rohit">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="animate-charcter">EXPLORE THE LIBRARY</h3>
+              <p style="color: #35c6e0;">Enjoy the latest video games available on internet and explore your priorities
+              </p></div></div>
+        </div></form>
+      <br>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://photobest1.com/wp-content/uploads/2018/04/Full-HD-1080p-Games-Wallpapers-02.jpg"
+            class="d-block w-100 sumit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>DARK INSIDERS</h5>
+            <p>Darksiders is a hack and slash action-adventure video game
+              franchise created by Vigil Games, now developed by Gunfire Games, which consists of original members of
+              Vigil.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperaccess.com/full/49348.jpg" class="d-block w-100 sumit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>ASSASSIAN'S CREED</h5>
+            <p>Assassin's Creed Valhalla is a 2020 action role-playing video
+              game developed by Ubisoft Montreal and published by Ubisoft and is one of the best in bussiness.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpapers.com/images/hd/hd-assassin-s-creed-gaming-cover-h3zgkk83v6fimy4j.jpg"
+            class="d-block w-100 sumit" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>THE WITCHER</h5>
+            <p>The series revolves around Geralt of Rivia, a skilled
+              monster hunter, and his adventures in a fantasy world of magic, political intrigue, and dangerous
+              creatures.</p>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-bottom: 0%;">
+          <strong>Welcome! It's a pleasure to have you here.</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+      <!--A heading paragraph-->
+
+
+  </section>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-bottom: 0%;">
+    <strong>Bring it on your levels to defy the opponents.</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div class="col-md-12 text-center">
+    <h2 class="animate-charcter bomb">TOP NOTCH GAMES</h2>
+    <p style="color: aqua;">Get a thrilling experiance of gaming and compete with fellow players at the highest level
+    </p>
+  </div>
+
+  <!--Card formation-->
+  <img src="https://wallpapercave.com/wp/wp5135525.jpg" id="babar" alt="">
+  <div class="top-left sachin" style="margin-top: 120px;">
+    <div class="container vvs">
+
+      <section>
+        <div class="container2">
+          <div class="card david" id="rahane">
+            <img src="https://cdn.wallpapersafari.com/7/49/BLvSji.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">THE WITCHER</h5>
+              <p class="card-text" style="font-size: 14px;">The series revolves around Geralt of Rivia, a skilled
+                monster hunter, and his adventures in a fantasy world of magic, political intrigue, and dangerous
+                creatures.</p>
+              <a href="#" class="btn btn-primary">Let's play</a>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="card david" id="pujara">
+          <img src="https://images4.alphacoders.com/115/thumb-1920-1151249.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ELDEN RING</h5>
+            <p class="card-text" style="font-size: 14px;">Elden Ring is a third-person perspective, action, role-playing
+              game with a focus on combat and exploration. Enemy attacks can be dodged or blocked using shields.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="bumrah">
+          <img src="https://tpucdn.com/review/ghost-recon-wildlands-benchmark-performance-test/images/title.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GHOST RECON</h5>
+            <p class="card-text" style="font-size: 14px;">Tom Clancy's Ghost Recon is a series of military tactical
+              shooter video games published by Ubisoft. In the series, the player is in charge of a fictional, newly
+              conceived squad of U.S. Army Special Forces soldiers from Delta Company.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <div class="card david" id="pat">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/303/497/178/video-games-death-pc-xbox-360-playstation-3-darksiders-2-game-death-lives-video-games-xbox-hd-art-wallpaper-preview.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DARKINSIDERS</h5>
+            <p class="card-text" style="font-size: 14px;">Darksiders is a hack and slash action-adventure video game
+              franchise created by Vigil Games, now developed by Gunfire Games, which consists of original members of
+              Vigil.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="josh">
+          <img src="https://cdn.wallpapersafari.com/1/54/BwVI60.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ASSASAIN'S CREED</h5>
+            <p class="card-text" style="font-size: 14px;">Assassin's Creed Valhalla is a 2020 action role-playing video
+              game developed by Ubisoft Montreal and published by Ubisoft.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="travis">
+          <img src="https://images3.alphacoders.com/929/929416.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">ANTHEM</h5>
+            <p class="card-text" style="font-size: 14px;">Anthem combines third-person shooter and action role-playing
+              game elements in a "contiguous open world" shared with up to three other players.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="ashwin">
+          <img
+            src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1Js0iAydGVqmj8NJ8RnuQx/f58486fceb032c95e1c2570a968eac36/Season_11.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">SEASON ELEVEN</h5>
+            <p class="card-text" style="font-size: 14px;">Seven Eleven is a role-playing sports video game for the
+              Nintendo DS developed and published by Level-5. Was released in Japan in August 2008.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="jaddu">
+          <img
+            src="https://a-static.besthdwallpaper.com/divinity-original-sin-ii-characters-wallpaper-2160x1440-3648_40.jpg"
+            class="card-img-top" alt="..." height="220px">
+          <div class="card-body">
+            <h5 class="card-title">DIVINITY ORIGINAL SINS</h5>
+            <p class="card-text" style="font-size: 14px;">Divinity: Original Sin is a role-playing video game developed
+              and published by Larian Studios. The fourth main entry in the Divinity game series. </p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="dhoni">
+          <img
+            src="https://e1.pxfuel.com/desktop-wallpaper/956/692/desktop-wallpaper-horizon-forbidden-west-2020-games-backgrounds-and-horizon-forbidden-west.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HORIZON</h5>
+            <p class="card-text" style="font-size: 14px;">Horizon is a series of action games developed by Guerrilla
+              Games and published by Sony Interactive Entertainment for PlayStation 4, PlayStation 5 and Microsoft
+              Windows.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="anderson">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/770/1018/460/windows-racing-e3-2016-extreme-wallpaper-preview.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">FORZA HORIZON</h5>
+            <p class="card-text" style="font-size: 14px;">Forza Horizon is a 2012 racing video game developed by
+              Playground Games and published by Microsoft Studios for the Xbox 360 on 23 October 2012.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="stuart">
+          <img src="https://wallpapercave.com/wp/wp4889139.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 14px;">MORTAL KOMBAT</h5>
+            <p class="card-text">Mortal Kombat is a media franchise centered on a series of fighting video games
+              originally developed by Midway Games in 1992. </p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="surya">
+          <img
+            src="https://pixelz.cc/wp-content/uploads/2019/12/world-of-warcraft-battle-for-azeroth-alliance-uhd-4k-wallpaper.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WORLD WARCRAFT</h5>
+            <p class="card-text" style="font-size: 14px;">The first three games in the Warcraft series, including their
+              expansion packs, were all released on both the PC and Macintosh. All of these games were of the strategy
+              genre.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="ben">
+          <img src="https://omggamer.com/wp-content/uploads/2023/01/Bloodborne-PC-Release-Date-Coming-Soon.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BLOODBORNE</h5>
+            <p class="card-text" style="font-size: 14px;">Bloodborne follows the player'character through the decrepit
+              Gothic, Victorian-era–inspired city of Yharnam, whose inhabitants are afflicted with a blood-borne
+              disease. </p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="kane">
+          <img src="https://trumpwallpapers.com/wp-content/uploads/Dark-souls-wallpaper-30-1920-x-1080.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DARK SOULS</h5>
+            <p class="card-text" style="font-size: 14px;">Dark Souls is a series of action role-playing games developed
+              by FromSoftware and published by Bandai Namco Entertainment. </p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card david" id="ross">
+          <img
+            src="https://www.desktopbackground.org/download/o/2015/10/25/1031805_battlefield-3-wallpapers_1920x1080_h.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BATTLEFEILD</h5>
+            <p class="card-text" style="font-size: 14px;">Battlefield is a series of first-person shooter video games
+              developed by Swedish company EA DICE and is published by American company Electronic Arts. </p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="card david" id="abd">
+          <img
+            src="https://assets1.ignimgs.com/2019/08/21/greedfall-official-trailer---gamescom-2019-3-25-screenshot-1566423828472.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GREED FALL</h5>
+            <p class="card-text" style="font-size: 14px;">The player, alongside other settlers, mercenaries, and
+              treasure hunters, explores a remote island where the locals, who are fighting off invading settlers.</p>
+            <a href="#" class="btn btn-primary">Let's play</a>
+          </div>
+        </div>
+      </section>
+      </section>
+      <div class="card david" id="steyn" style="margin-left: 1085px; margin-top: -320px;">
+        <img src="https://c4.wallpaperflare.com/wallpaper/894/546/467/planetside-2-wallpaper-preview.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PLANETSIDE</h5>
+          <p class="card-text" style="font-size: 14px;">PlanetSide is a series of massively multiplayer online
+            first-person shooter video games published by Daybreak Game Company. .</p>
+          <a href="#" class="btn btn-primary">Let's play</a>
+        </div>
+      </div>
+      </section>
+    </div>
+    <br>
+    <!--Question answers-->
+
+    <div class="container smith">
+      <details class="kumar">
+        <summary>
+          <h4 class="lara"><i class="fa-solid fa-star fa-spin"></i>&nbsp;POPULAR QUESTIONS AMONG USERS&nbsp;<i
+              class="fa-solid fa-star fa-spin"></i></h4>
+        </summary>
+        <p class="kallis">
+        <div class="accordion sehwag" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" style="background-color: black; color: chartreuse;">
+                1. What is your gaming website about?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Our gaming website is dedicated to providing the latest news, reviews, and updates about video
+                  games from various platforms, including PC, consoles, and mobile.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                2. How can I stay updated with the latest gaming news?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>You can stay updated by visiting our website regularly or subscribing to our newsletter.
+                  Additionally, follow us on our social media channels for real-time updates.
+
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                3. Can I submit my game for review on your website?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Absolutely! We welcome game developers and publishers to submit their games for review
+                  consideration. Please reach out to our contact email for further details.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample" style="margin-left: -1px;">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" style="background-color: black; color: chartreuse;" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                4. Are there any community features on your website?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>TYes, we have an active gaming community where you can engage with other gamers, discuss games,
+                  share tips, and participate in events and competitions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                5. Are there any giveaways or contests on the website?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Yes, we regularly host giveaways and contests for our community members. Keep an eye on our
+                  website and social media channels for announcements and participation instructions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                6. How do I contact your support team for website-related queries?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>You can reach out to our support team by using the contact form on our website or by sending an
+                  email to support@gamingwebsite.com. We will get back to you as soon as possible.
+
+                  Please note that the content of this FAQ can be customized based on the specific offerings and
+                  features of your gaming website. Additionally, it's essential to keep the FAQ section up to date with
+                  the most relevant information for your users.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                7. Do you offer game reviews?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Yes, we provide in-depth game reviews covering various genres. Our reviews are unbiased and aim
+                  to help you make informed decisions about which games to play.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                8. Can I contribute to your gaming website as a writer?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>We appreciate your interest! If you are a talented writer with a passion for gaming, feel free
+                  to contact us with your writing samples and ideas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                9. Are your articles and reviews written by gaming experts?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Absolutely! Our team consists of passionate and experienced gamers who have in-depth knowledge
+                  of the gaming industry and are dedicated to providing quality content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" style="background-color: black; color: chartreuse;"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                10. Do you cover gaming hardware and accessories?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Yes, in addition to game-related content, we also review gaming hardware and accessories like
+                  controllers, headsets, keyboards, and mice.
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </p>
+    </details>
+
+    <!--another question-->
+    <div class="container smith">
+      <details class="kumar">
+        <summary>
+          <h5 class="lara"><i class="fa-solid fa-star fa-spin"></i>&nbsp;ABOUT THE WEBSITE&nbsp;<i
+              class="fa-solid fa-star fa-spin"></i></h5>
+        </summary>
+        <p class="kallis">
+        <ul style="color: gold; background-color: rgb(53, 52, 44);margin-bottom: 0%;">
+          <li>
+            <strong>
+              At GameOn.in website, we're thrilled to welcome you to a gaming haven crafted by gamers, for gamers. Our
+              website is a passion project that celebrates the incredible world of gaming and brings together a
+              community of like-minded individuals who share the love for immersive virtual experiences.</strong>
+          </li>
+          <br />
+          <li>
+            <strong>
+              In GameOn.in website, our mission is to foster a positive and inclusive gaming community. We believe that
+              gaming is more than just entertainment; it's a way to connect, explore new worlds, and build lasting
+              friendships. We aim to create a space where gamers from all backgrounds can come together to celebrate
+              their passion for gaming.</strong>
+          </li>
+          <br />
+          <li>
+            <strong>
+              Our reviews are written by real gamers, for gamers. We believe in offering honest and unbiased opinions
+              about the games we play, allowing you to make informed decisions about your gaming experiences.
+              We cherish our community and believe that gaming is more enjoyable when shared. Join our forums to connect
+              with fellow gamers, share your experiences, and discover new gaming buddies.
+              We embrace diversity and inclusivity. Our aim is to create a safe and welcoming space for gamers of all
+              backgrounds, genders, and identities to come together and enjoy the world of gaming.</strong>
+          </li>
+          <br />
+          <li>
+            <strong>
+              Our team is a group of gaming enthusiasts who bring a diverse range of experiences and expertise to the
+              table. From hardcore RPG fans to competitive esports players, we share a common love for gaming and are
+              committed to delivering top-notch content to our audience.</strong>
+          </li>
+          <br />
+          <li>
+            <strong>
+              We welcome contributions from fellow gamers and aspiring writers. If you have a passion for gaming and
+              love sharing your insights, consider becoming a part of our team. Whether you want to write game reviews,
+              share gaming tips, or contribute to our community discussions, we'd love to hear from you.</strong>
+          </li>
+          <br />
+          <li>
+            <strong>
+              Have any questions, suggestions, or inquiries? Feel free to contact us through our website's contact form
+              or reach out to us via email at contact@gamingwebsite.com. We value your feedback and are always here to
+              assist you.
+
+              Thank you for being a part of GameOn.in website. Let's embark on epic gaming adventures together!
+
+              Remember to tailor this section to reflect the unique characteristics of your gaming website, your team's
+              vision, and the specific services you offer. Highlight what makes your website stand out and appeal to
+              your target audience of gamers.</strong>
+          </li>
+          <br />
+        </ul>
+    </div>
+    </p>
+    </details>
+
+    </footer>
+    <div class="container my-5" style="max-width: 3000px; margin-left: 5px;">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-light" style="background-color: #484c4e;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 text-white" style="background-color: #291be8;">
+          <!-- Left -->
+          <div class="me-5">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="text-white me-4">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">GameOn.in</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #e1ff4d; height: 2px" />
+                <p>
+                  Here a premium gaming experiance is given to the users for free who are unable to
+                  enjoy the taste of high quality video games due to lack of resources
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Quick links</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #deff4d; height: 2px" />
+                <p>
+                  <a href="#!" class="text-light">F.A.Q</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Portfolios</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Terms of Service</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Suppoprt</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Careers</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Communities</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #d0ff4d; height: 2px" />
+                <p>
+                  <a href="#!" class="text-light">Impact Reports</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Local Makers</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Events and Workshops</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-light">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #caff4d; height: 2px" />
+                <p><i class="fas fa-home mr-3"></i> West Bengal, NY 711112, India</p>
+                <p><i class="fas fa-envelope mr-3"></i> gameon.in</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2023 Copyrights. All rights reserved.:
+          <a class="text-light" href="https://mdbootstrap.com/">GameOn.in</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
